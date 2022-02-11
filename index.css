@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#logo{
+  line-height: 60px;
+  margin-left: 40px;
+  display: inline-block;
+cursor: pointer;
+font-size: 30px;
+font-weight: bold;
+color: #00a7ff; /* blue */
+}
+#logo:hover{
+  color: #f85989; /* white */
+}
+#logo-s{
+color: #f85989; /* white */
+margin-left: 5px;
+}
+#logo:hover #logo-s{
+color: #00a7ff; /* blue */
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+ 
+}
+
+.navbar {
+  font-size: 18px;
+  background-image: url('background.jpg');
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  
+  list-style-type: none;
+  display: none;
+  cursor:pointer;
+  
+}
+
+.nav-links {
+ 
+  text-decoration: none;
+  color: rgb(115, 152, 253);
+  font-weight: bold;
+}
+
+.main-nav li {
+  
+  margin: 41px 138px;
+  padding: 10px;
+}
+
+/* .logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+} */
+
+.navbar-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(82, 166, 245, 0.8);
+  font-size: 24px;
+}
+.logo:hover,
+.nav-links:hover {
+    color: rgb(236, 240, 16);
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #logo{
+    margin-top:-58px;
+  }
+  .navbar {
+    background-image: url('background.jpg');
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+.main-nav .f{
+padding:32px;
+padding-top:6px;
+margin-top:-5px;
+}
+.main-nav .s{
+  padding:32px;
+padding-top:6px;
+}
+.main-nav .t{
+  padding:27px;
+  padding-top:6px;
+}
+  .nav-links {
+      margin-left: 40px;
+      background-image: url('menubg.png');
+      background-repeat: no-repeat;
+      /* padding: 27px; */
+    /* margin-top: -23px; */
+    /* padding-top: 6px */
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+  .navbar-menu {
+      display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+      color: rgb(247, 250, 73);
+  }
+}
+
+.second{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: flex-start;
+    /* height:500px; */
+    margin-top:95px;
+   margin-right: 40px;
+}
+.banner{
+    height:fit-content;
+    margin-top: 90px;
+    padding-right: 90px;
+    margin-left: 50px;
+   
+}
+.image img{
+    height:360px;
+}
+.f{
+    display:flex;
+    justify-content: center;
+}
+.first{
+    display: flex;
+   align-items: center;
+    /* justify-content: center; */
+}
+.first img{
+    height:300px;
+    width:302px;
+    border-radius: 50%;
+}
+.main-first{
+    background-image: url('slider-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:1200px;
+    height:500px;
+    
+  
+}
+.main1{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+   
+    height:700px;
+}
+.test{
+    display: none;
+}
+.carouse {
+    overflow: hidden;
+
+    position: relative;
+    
+  }
+  .carouse .carouse_item,
+  .carouse .hidden {
+    display: none;
+  }
+  
+  .carouse .carouse_item img {
+    
+    width: 100%;
+    
+    height: auto;
+  }
+  .carouse .active {
+    display: block;
+   
+  }
+  .carouse .carouse_actions {
+    display: flex;
+  
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    /* it will not be in center so we have to add translate-y*/
+    transform: translateY(-50%);
+    width: 100%;
+    
+  }
+  .carouse .carouse_actions button {
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 2em;
+    width: 40px;
+    height: 54px;
+    color: wheat;
+    background: #00000059;
+  }
+  @media only screen and (max-width: 700px){
+
+.main-first{
+    width:450px;
+    /* background-image: url('slider-bg.png'); */
+   background-size: cover;
+    background-repeat: no-repeat;
+}
+.first img{
+    height: 200px;
+    width: 200px;
+    margin-top: -2px;
+}
+.second{
+    margin-bottom: -25px;
+    margin-left: 61px;
+}
+.carouse{
+    display: none;
+}
+.test{
+    display: block;
+    margin-left:-47px;
+}
+.test img{
+    width:400px;
+    height:200px;
+    margin-top:-99px;
+    
+    border-radius: 104px;
+    margin-bottom: 42px;
+    
+}
+}
+      
+  
+  
+  
